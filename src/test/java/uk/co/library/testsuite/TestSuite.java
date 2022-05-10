@@ -13,7 +13,7 @@ public class TestSuite extends TestBase {
     HomePage homePage;
     ResultPage resultPage;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void init() {
         homePage = new HomePage();
         resultPage = new ResultPage();
